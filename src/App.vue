@@ -5,14 +5,13 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 <template>
   <header>
-
     <div class="wrapper">
       <HelloWorld msg="Carnet de bord" />
 
       <nav>
         <RouterLink to="/">Accueil</RouterLink>
         <RouterLink to="/cardgen">1. Card Generator</RouterLink>
-        <RouterLink to="/accordion">2. Accordion</RouterLink>
+        <RouterLink to="/quizz">2. Quizz</RouterLink>
       </nav>
     </div>
   </header>

@@ -26,10 +26,10 @@ const router = createRouter({
       component: CardGenView,
     },
     {
-      path: "/accordion",
-      name: "accordion",
-      component: AccordionView
-    }
+      path: "/quizz",
+      name: "quizz",
+      component: AccordionView,
+    },
   ],
 });
 

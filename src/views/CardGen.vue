@@ -2,19 +2,19 @@
 export default {
   data() {
     return {
-      cardTitle: 'Ajoute un titre',
-      cardAuthor: 'Auteur',
-      cardColor: '#1d1c2e',
+      cardTitle: "Ajoute un titre",
+      cardAuthor: "Auteur",
+      cardColor: "#1d1c2e",
       cardStatus: null,
       cardStatusItems: [
         "En cours d'apprentissage",
         "Découverte",
         "Acquis",
-        "Expertise technique"
-      ]
-    }
-  }
-}
+        "Expertise technique",
+      ],
+    };
+  },
+};
 </script>
 
 <template>
@@ -24,24 +24,47 @@ export default {
       <div>
         <label for="cardSelect">Selectionner un statut</label>
         <select v-model="cardStatus" id="cardSelect" name="cardSelect">
-          <option v-for="(item, index) in cardStatusItems" :value="item" :key="index">{{ item }}</option>
+          <option
+            v-for="(item, index) in cardStatusItems"
+            :value="item"
+            :key="index"
+          >
+            {{ item }}
+          </option>
         </select>
       </div>
       <div>
         <label for="cardTitle">Titre de votre carte</label>
-        <input type="text" v-model="cardTitle" placeholder="Votre titre" name="cardTitle" id="cardTitle">
+        <input
+          type="text"
+          v-model="cardTitle"
+          placeholder="Votre titre"
+          name="cardTitle"
+          id="cardTitle"
+        />
       </div>
       <div>
         <label for="cardAuthor">Auteur</label>
-        <input type="text" v-model="cardAuthor" placeholder="Auteur" name="cardAuthor" id="cardAuthor">
+        <input
+          type="text"
+          v-model="cardAuthor"
+          placeholder="Auteur"
+          name="cardAuthor"
+          id="cardAuthor"
+        />
       </div>
       <div>
         <label for="cardColor">Choisir une couleur de fond</label>
-        <input type="color" v-model="cardColor" name="cardColor" id="cardColor">
+        <input
+          type="color"
+          v-model="cardColor"
+          name="cardColor"
+          id="cardColor"
+        />
       </div>
     </form>
 
-    <div class="card" :style="{ backgroundColor:cardColor }">
+    <div class="card" :style="{ backgroundColor: cardColor }">
       <div class="card__title">
         <p>{{ cardStatus }}</p>
       </div>
@@ -49,10 +72,8 @@ export default {
         <p class="author">{{ cardAuthor }}</p>
         <h2>{{ cardTitle }}</h2>
       </div>
-
     </div>
   </div>
-
 </template>
 
 <style>
