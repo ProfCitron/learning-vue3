@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import CardGenView from "../views/CardGen.vue";
 import AccordionView from "../views/AccordionView.vue";
+import MappingView from "../views/part-3/MappingView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,6 +30,11 @@ const router = createRouter({
       path: "/quizz",
       name: "quizz",
       component: AccordionView,
+    },
+    {
+      path: "/mapping",
+      name: "mapping",
+      component: MappingView,
     },
   ],
 });

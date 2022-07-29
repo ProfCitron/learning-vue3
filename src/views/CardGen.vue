@@ -76,7 +76,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 @media (min-width: 1024px) {
   .coursegen {
     min-height: 100vh;

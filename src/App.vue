@@ -12,6 +12,7 @@ import HelloWorld from "./components/HelloWorld.vue";
         <RouterLink to="/">Accueil</RouterLink>
         <RouterLink to="/cardgen">1. Card Generator</RouterLink>
         <RouterLink to="/quizz">2. Quizz</RouterLink>
+        <RouterLink to="/mapping">3. Tri</RouterLink>
       </nav>
     </div>
   </header>
